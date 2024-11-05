@@ -1,4 +1,4 @@
-package com.uchoas.managemente;
+package com.uchoas.eventmanagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

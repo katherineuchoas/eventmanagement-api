@@ -1,4 +1,4 @@
-package com.uchoas.managemente;
+package com.uchoas.eventmanagement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
