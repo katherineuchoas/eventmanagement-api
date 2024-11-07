@@ -2,7 +2,6 @@ package com.uchoas.eventmanagement.entities;
 
 import java.util.Objects;
 import java.util.Set;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 

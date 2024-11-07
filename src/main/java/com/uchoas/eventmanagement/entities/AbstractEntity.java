@@ -1,5 +1,6 @@
 package com.uchoas.eventmanagement.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,7 +17,7 @@ public class AbstractEntity {
     @Column(nullable = false, updatable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long id;
-
+    @JsonIgnore
     @CreationTimestamp
     @Column(updatable = false)
     protected Instant created;

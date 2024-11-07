@@ -1,6 +1,8 @@
 package com.uchoas.eventmanagement.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Objects;
@@ -15,10 +17,12 @@ import jakarta.persistence.OneToMany;
 
 import org.springframework.data.rest.core.annotation.RestResource;
 
+@JsonPropertyOrder({"resourceId"})
 @Entity
 public class Event extends AbstractEntity {
 
     private String name;
+    @JsonProperty("desc")
     private String description;
     private ZonedDateTime startTime;
     private ZonedDateTime endTime;
